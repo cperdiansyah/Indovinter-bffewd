@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700;900&family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'Lato', 'PT Sans', sans-serif;
+}
+
+body {
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a {
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #000000;
+    outline: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: none;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.bg-13 {
+    background-color: #132150;
+}
+
+/* Bagian Banner/Jumbotron */
+
+.jumbotron {
+    width: 100%;
+    background-image: url(../images/Jumbotron%204-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+}
+
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron h6 {
+    color: #fff
+}
+
+.jumbotron ul {
+    padding-left: 40px;
+}
+
+.row {
+    margin: 20px auto;
+}
+
+.main-banner {
+    margin-top: 50px;
+    letter-spacing: 4px;
+}
+
+.main-banner h1,
+.main-banner h1 span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 7px;
+}
+
+
+.main-banner h3,
+.main-banner h3 span {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 45px;
+    letter-spacing: 3px;
+}
+
+.text-red {
+    color: red;
+}
+
+.main-cases-global .col {
+    padding-left: 10px;
+}
+
+.main-cases-global .flagsCountry {
+    padding-left: 0px;
+}
+
+.main-cases-global .col span i {
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.sub-cases li {
+    font-size: 18px;
+}
+
+.sub-cases li span {
+    margin-left: 60px;
+    width: 70px;
+    padding-left: auto;
+    font-weight:bold;
+}
+
+.sub-cases li:nth-child(2) span {
+    margin-left: 43px;
+}
+
+.sub-cases li:nth-child(3) span {
+    margin-left: 65px;
+}
+#totalCasesIndo{
+    width: 300px;
+}
+#totalCasesGlobal{padding-left: 15%;}
+#flags-icon img{
+    width: 25px;
+}
+#country {padding: 0;}
+.bold {
+    font-weight:bold;
+    text-align: center;
+}
+
+.covid {
+    background-image: url(../images/Covid.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: contain;
+    right: 130px;
+    top: 120px;
+    width: 248px;
+    height: 258px;
+    animation: spinning 20s linear infinite;
+
+}
+
+.hologram {
+    background-image: url(../images/Hologram.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    position: absolute;
+    right: 8px;
+    top: 114px;
+    width: 496px;
+    height: 496px;
+    filter: alpha(opacity=80) progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+
+/* Kasus Harian */
+.dailyCases .container {
+    padding: 0;
+}
+
+.dailyCases {
+    width: 85%;
+    margin: 10px auto;
+    color: #000;
+}
+
+.dailyCase {
+    margin: 20px 10px;
+}
+
+.dailyCases h3 {
+    color: black;
+}
+
+.corona-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.corona-thumb img {
+    width: 70px;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.3));
+    border-radius: 40px;
+}
+
+.corona-content {
+    margin-left: 15px;
+}
+
+.corona-content p {
+    font-size: 16px;
+}
+
+.card-title {
+    padding: 10px 20px;
+    margin: 0;
+}
+
+
+/*Kasus Provinsi */
+
+.provinceCases {
+    height: 600px;
+    margin: 20px auto;
+}
+
+.provinceCases .card {
+    height: 100%;
+    padding: 20px auto;
+}
+
+.bottom-cases {
+    display: flex;
+    flex-direction: row;
+}
+
+.details-cases {
+    width: 70%;
+}
+
+.list-cases {
+    width: 30%;
+}
+
+.details-cases,
+.list-cases {
+    padding: 20px;
+}
+
+.search-container {
+    margin: 10px 0;
+}
+
+.search-container input {
+    width: 70%;
+    padding: 2px 5px;
+    border-radius: 10px;
+    text-align: center;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid cornflowerblue;
+}
+
+.search-container input:focus {
+    width: 65;
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transition: all .22s ease-in-out;
+}
+
+.search-container button {
+    border-radius: 5px;
+    padding: 2px 5px;
+    text-align: center;
+    background-color: #3FBCF7;
+    border: 0;
+    color: white;
+    margin: auto 10px;
+
+}
+
+/*Bagian Bawah*/
+.corona-count-bottom {
+    padding: 0px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+}
+
+.corona-count-bottom .corona-left {
+    padding: 20px;
+    background: #f6f8ff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.corona-count-bottom .corona-left .cl-title .clt-right ul li {
+    padding: 10px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.bg-f9 {
+    background: #f9fcff;
+}
+
+.corona-count-bottom .corona-right {
+    padding: 20px;
+    background: #f6f8ff;
+    border-radius: 6px;
+    height: 97%;
+}
+
+.corona-count-bottom .corona-right .cr-title {
+    margin-bottom: 15px;
+}
+
+.corona-count-bottom .corona-right .cr-body ul li {
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding: 8px 10px;
+    background: #fff;
+    list-style: none;
+    display: flex;
+}
+
+.corona-count-bottom .corona-right .cr-body .crb-title ul li {
+    background: #f9fdff;
+}
+
+.corona-count-bottom .corona-right .cr-body ul li .cr-country {
+    width: 50%;
+    padding: auto 20px;
+}
+
+.corona-count-bottom .corona-right .cr-body ul li .cr-case {
+    width: 30%;
+    padding-left: 15px;
+}
+
+.corona-count-bottom .corona-right .cr-body .crb-title ul li .cr-case {
+    padding-left: 0;
+}
+
+.corona-count-bottom .corona-right .cr-body ul li .cr-case::after {
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 0;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.table-data {
+    height: 310px;
+    overflow: scroll;
+}
+
+.data-detail {
+    height: 500px;
+}
+
+.table {
+    color: #6a5d5d;
+}
+
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+table img {
+    width: 30px;
+}
+
+/*Kasus Provinsi*/
+.update-wrap {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.items-detail {
+    margin-top: 30px;
+}
+
+.provinceCases .item {
+    border-radius: 5px;
+}
+
+.item h4,
+.item h5,
+.item p {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.item p {
+    font-size: 14px;
+}
+
+#case-bottom {
+    margin-top: 20px;
+}
+
+.item h4 {
+    margin: 10px;
+}
+
+.item h5 {
+    padding: 0;
+    margin: 0;
+}
+
+#province-pos {
+    background-color: #eb8f8f;
+}
+
+#province-death {
+    background-color: #797a7e;
+}
+
+#province-recovered {
+    background-color: #8fc0a9;
+}
+
+.bottom-tittle {
+    margin: 0 auto;
+}
+
+.bottom-tittle h5 {
+    padding-top: 15px;
+
+}
+
+.line {
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+}
+
+.sex-count {
+    margin-top: 5px;
+}
+
+.sex-tittle p {
+    text-align: center;
+}
+
+.sex-tittle p:nth-child(2) {
+    margin-bottom: 0px;
+}
+
+.sex-tittle p:nth-child(3) {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.age {
+    text-align: center;
+}
+
+/* footer */
+
+.copyright {
+    width: 100%;
+    height: 90px;
+    margin-bottom: -10px;
+    position: static;
+    background-color: #132150;
+}
+
+.copyright p {
+    font-size: 16px;
+}
+
+.copyright p a {
+    font-weight: bold;
+    color: lightblue;
+}
+
+.myName {
+    color: gold !important;
+    font-weight: bold;
+
+}
+
+.fa-heart {
+    color: red;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes spinning {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(359deg);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
