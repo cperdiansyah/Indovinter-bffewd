@@ -20,7 +20,7 @@ const mainData = () => {
 
     const getLocalData = async () => {
         const constapi = "https://data.covid19.go.id/public/api/update.json";
-        const response = await fetch(`https://cors-anywhere.herokuapp.com/${constapi}`);
+        const response = await fetch(`${constapi}`);
 
         // const response = await fetch("https://data.covid19.go.id/public/api/update.json",{
         //         headers: {

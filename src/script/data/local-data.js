@@ -8,7 +8,7 @@ const tableData = document.querySelector("#tableData");
 const update = document.querySelector("#update");
 
 const tableLocal = async () => {
-    const response = await fetch(`https://cors-anywhere.herokuapp.com/` + `https://data.covid19.go.id/public/api/prov.json`);
+    const response = await fetch(`https://data.covid19.go.id/public/api/prov.json`);
 
     // const response = await fetch("https://data.covid19.go.id/public/api/prov.json",{
     //             headers: {
